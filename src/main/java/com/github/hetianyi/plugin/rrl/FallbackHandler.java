@@ -10,7 +10,8 @@ package com.github.hetianyi.plugin.rrl;
 public interface FallbackHandler {
 
     /**
-     *
+     * 当拦截的方法执行发生非BlockException和DowngradeException等异常时，
+     * 则会进入FallbackHandler的fallback回调方法。
      * @return
      */
     Object fallback(Throwable throwable) throws Throwable;

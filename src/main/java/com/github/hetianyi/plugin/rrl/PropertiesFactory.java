@@ -4,7 +4,11 @@ package com.github.hetianyi.plugin.rrl;
 import com.github.hetianyi.plugin.rrl.config.AnnotatedLimitResourceProperties;
 
 /**
+ * factory for properties bean AnnotatedLimitResourceProperties.
  *
+ * @author Jason He
+ * @version 1.0.0
+ * @date 2020-01-06
  */
 public class PropertiesFactory {
 
