@@ -15,7 +15,7 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <packaging>jar</packaging>
-    <name>api-rate-limiter-starter</name>
+    <name>redis-rate-limiter</name>
     <description>API rate limiter.</description>
 
     <properties>
