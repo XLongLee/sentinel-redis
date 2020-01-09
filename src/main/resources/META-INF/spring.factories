@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.auxxs.base.limiter.RateLimiterAutoConfiguration,\
+  com.auxxs.base.limiter.config.ScriptConfig,\
+  com.auxxs.base.limiter.AspectResolver

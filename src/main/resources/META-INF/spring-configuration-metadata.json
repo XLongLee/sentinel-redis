@@ -1,0 +1,78 @@
+{
+  "groups": [
+    {
+      "name": "limit.config",
+      "type": "com.auxxs.base.limiter.config.LimitResourceProperties",
+      "sourceType": "com.auxxs.base.limiter.config.LimitResourceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "period",
+      "type": "java.lang.Integer",
+      "description": "周期（单位s）",
+      "sourceType": "com.auxxs.base.limiter.config.LimitResourceProperties",
+      "defaultValue": "60"
+    },
+    {
+      "name": "count",
+      "type": "java.lang.Integer",
+      "description": "一个周期内API调用限制总次数，换算成每秒=count/period，在redis里端会转换为每秒最大调用次数。",
+      "sourceType": "com.auxxs.base.limiter.config.LimitResourceProperties",
+      "defaultValue": "60"
+    },
+    {
+      "name": "enableDegrade",
+      "type": "java.lang.Boolean",
+      "description": "是否开启降级功能",
+      "sourceType": "com.auxxs.base.limiter.config.LimitResourceProperties",
+      "defaultValue": "true"
+    },
+    {
+      "name": "degradeStrategy",
+      "type": "java.lang.String",
+      "description": "降级策略",
+      "sourceType": "com.auxxs.base.limiter.config.LimitResourceProperties",
+      "defaultValue": "RT"
+    },
+    {
+      "name": "degradeValue",
+      "type": "java.lang.String",
+      "description": "降级策略值，根据降级策略降级策略的不同，该值会有不同的取值范围",
+      "sourceType": "com.auxxs.base.limiter.config.LimitResourceProperties"
+    },
+    {
+      "name": "degradeWindow",
+      "type": "java.lang.Integer",
+      "description": "降级窗口时间（单位s），不能大于60",
+      "sourceType": "com.auxxs.base.limiter.config.LimitResourceProperties",
+      "defaultValue": "5"
+    },
+    {
+      "name": "clusterMode",
+      "type": "java.lang.Boolean",
+      "description": "是否集群模式（暂时没有用）",
+      "sourceType": "com.auxxs.base.limiter.config.LimitResourceProperties",
+      "defaultValue": false
+    }
+  ],
+  "hints": [
+    {
+      "name": "degradeStrategy",
+      "values": [
+        {
+          "value": "RT",
+          "description": "平均响应时间"
+        },
+        {
+          "value": "EP",
+          "description": "异常比例"
+        },
+        {
+          "value": "EC",
+          "description": "异常数"
+        }
+      ]
+    }
+  ]
+}
