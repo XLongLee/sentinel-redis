@@ -1,6 +1,6 @@
 package com.github.hetianyi.plugin.rrl;
 
-import com.auxxs.base.common.util.StringUtil;
+import com.github.hetianyi.common.util.StringUtil;
 import com.github.hetianyi.plugin.rrl.annotation.LimitResource;
 import com.github.hetianyi.plugin.rrl.config.AnnotatedLimitResourceProperties;
 import com.github.hetianyi.plugin.rrl.config.LimitResourceProperties;

@@ -1,6 +1,7 @@
 package com.github.hetianyi.plugin.rrl;
 
-import com.auxxs.base.common.util.StringUtil;
+
+import com.github.hetianyi.common.util.StringUtil;
 
 public class ClassInitializeFactory {
 

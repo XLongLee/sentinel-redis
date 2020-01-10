@@ -1,6 +1,6 @@
 package com.github.hetianyi.plugin.rrl.impl;
 
-import com.auxxs.base.common.util.StringUtil;
+import com.github.hetianyi.common.util.StringUtil;
 import com.github.hetianyi.plugin.rrl.LimitKeyGenerator;
 
 import javax.servlet.http.HttpServletRequest;

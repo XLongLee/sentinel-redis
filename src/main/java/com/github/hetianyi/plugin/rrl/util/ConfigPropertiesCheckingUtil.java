@@ -1,6 +1,6 @@
 package com.github.hetianyi.plugin.rrl.util;
 
-import com.auxxs.base.common.util.AssertUtil;
+import com.github.hetianyi.common.util.AssertUtil;
 import com.github.hetianyi.plugin.rrl.config.LimitResourceProperties;
 import lombok.extern.slf4j.Slf4j;
 

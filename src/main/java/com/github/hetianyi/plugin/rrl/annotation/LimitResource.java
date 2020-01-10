@@ -4,7 +4,6 @@ import com.github.hetianyi.plugin.rrl.BlockHandler;
 import com.github.hetianyi.plugin.rrl.LimitKeyGenerator;
 import com.github.hetianyi.plugin.rrl.FallbackHandler;
 import com.github.hetianyi.plugin.rrl.config.LimitResourceProperties;
-import com.auxxs.base.limiter.impl.*;
 import com.github.hetianyi.plugin.rrl.impl.EmptyBlockHandler;
 import com.github.hetianyi.plugin.rrl.impl.EmptyFallbackHandler;
 import com.github.hetianyi.plugin.rrl.impl.EmptyLimitKeyGenerator;
