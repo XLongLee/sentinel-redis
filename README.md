@@ -1,4 +1,4 @@
-# redis-rate-limiter
+# sentinel-redis
 
 基于Redis实现的分布式限流和降级插件。
 
@@ -8,9 +8,9 @@
 
 ```xml
 <dependency>
-    <groupId>com.auxxs.springboot.base</groupId>
-    <artifactId>springboot-api-rate-limiter-starter</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <groupId>com.github.hetianyi</groupId>
+    <artifactId>sentinel-redis</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
 
