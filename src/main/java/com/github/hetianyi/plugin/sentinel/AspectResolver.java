@@ -1,15 +1,15 @@
-package com.github.hetianyi.plugin.rrl;
+package com.github.hetianyi.plugin.sentinel;
 
 import com.github.hetianyi.common.util.StringUtil;
-import com.github.hetianyi.plugin.rrl.annotation.LimitResource;
-import com.github.hetianyi.plugin.rrl.config.AnnotatedLimitResourceProperties;
-import com.github.hetianyi.plugin.rrl.config.LimitResourceProperties;
-import com.github.hetianyi.plugin.rrl.exception.DowngradeException;
-import com.github.hetianyi.plugin.rrl.impl.DefaultBlockHandler;
-import com.github.hetianyi.plugin.rrl.impl.DefaultFallbackHandler;
-import com.github.hetianyi.plugin.rrl.impl.EmptyLimitKeyGenerator;
-import com.github.hetianyi.plugin.rrl.impl.UrlLimitKeyGenerator;
-import com.github.hetianyi.plugin.rrl.util.ConfigPropertiesCheckingUtil;
+import com.github.hetianyi.plugin.sentinel.annotation.LimitResource;
+import com.github.hetianyi.plugin.sentinel.config.AnnotatedLimitResourceProperties;
+import com.github.hetianyi.plugin.sentinel.config.LimitResourceProperties;
+import com.github.hetianyi.plugin.sentinel.exception.DowngradeException;
+import com.github.hetianyi.plugin.sentinel.impl.DefaultBlockHandler;
+import com.github.hetianyi.plugin.sentinel.impl.DefaultFallbackHandler;
+import com.github.hetianyi.plugin.sentinel.impl.EmptyLimitKeyGenerator;
+import com.github.hetianyi.plugin.sentinel.impl.UrlLimitKeyGenerator;
+import com.github.hetianyi.plugin.sentinel.util.ConfigPropertiesCheckingUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;

@@ -1,4 +1,4 @@
-package com.github.hetianyi.plugin.rrl.config;
+package com.github.hetianyi.plugin.sentinel.config;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

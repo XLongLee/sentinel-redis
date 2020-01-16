@@ -1,6 +1,6 @@
-package com.github.hetianyi.plugin.rrl.impl;
+package com.github.hetianyi.plugin.sentinel.impl;
 
-import com.github.hetianyi.plugin.rrl.BlockHandler;
+import com.github.hetianyi.plugin.sentinel.BlockHandler;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.client.HttpClientErrorException;
 

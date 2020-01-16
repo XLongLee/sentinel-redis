@@ -1,4 +1,4 @@
-package com.github.hetianyi.plugin.rrl.impl;
+package com.github.hetianyi.plugin.sentinel.impl;
 
 /**
  * 限流阻断默认实现

@@ -1,4 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.github.hetianyi.plugin.rrl.RateLimiterAutoConfiguration,\
-  com.github.hetianyi.plugin.rrl.config.ScriptConfig,\
-  com.github.hetianyi.plugin.rrl.AspectResolver
+  com.github.hetianyi.plugin.sentinel.RateLimiterAutoConfiguration,\
+  com.github.hetianyi.plugin.sentinel.config.ScriptConfig,\
+  com.github.hetianyi.plugin.sentinel.AspectResolver

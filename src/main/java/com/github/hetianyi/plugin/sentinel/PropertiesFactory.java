@@ -1,7 +1,7 @@
-package com.github.hetianyi.plugin.rrl;
+package com.github.hetianyi.plugin.sentinel;
 
 
-import com.github.hetianyi.plugin.rrl.config.AnnotatedLimitResourceProperties;
+import com.github.hetianyi.plugin.sentinel.config.AnnotatedLimitResourceProperties;
 
 /**
  * factory for properties bean AnnotatedLimitResourceProperties.

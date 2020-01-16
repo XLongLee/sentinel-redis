@@ -1,7 +1,7 @@
-package com.github.hetianyi.plugin.rrl;
+package com.github.hetianyi.plugin.sentinel;
 
-import com.github.hetianyi.plugin.rrl.annotation.LimitResource;
-import com.github.hetianyi.plugin.rrl.config.LimitResourceProperties;
+import com.github.hetianyi.plugin.sentinel.annotation.LimitResource;
+import com.github.hetianyi.plugin.sentinel.config.LimitResourceProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

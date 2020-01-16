@@ -1,6 +1,6 @@
-package com.github.hetianyi.plugin.rrl.impl;
+package com.github.hetianyi.plugin.sentinel.impl;
 
-import com.github.hetianyi.plugin.rrl.FallbackHandler;
+import com.github.hetianyi.plugin.sentinel.FallbackHandler;
 
 /**
  *

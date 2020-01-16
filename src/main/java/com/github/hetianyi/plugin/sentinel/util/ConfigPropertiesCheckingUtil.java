@@ -1,7 +1,7 @@
-package com.github.hetianyi.plugin.rrl.util;
+package com.github.hetianyi.plugin.sentinel.util;
 
 import com.github.hetianyi.common.util.AssertUtil;
-import com.github.hetianyi.plugin.rrl.config.LimitResourceProperties;
+import com.github.hetianyi.plugin.sentinel.config.LimitResourceProperties;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

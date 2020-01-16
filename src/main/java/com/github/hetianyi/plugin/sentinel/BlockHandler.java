@@ -1,4 +1,4 @@
-package com.github.hetianyi.plugin.rrl;
+package com.github.hetianyi.plugin.sentinel;
 
 /**
  *

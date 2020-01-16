@@ -1,12 +1,12 @@
-package com.github.hetianyi.plugin.rrl.annotation;
+package com.github.hetianyi.plugin.sentinel.annotation;
 
-import com.github.hetianyi.plugin.rrl.BlockHandler;
-import com.github.hetianyi.plugin.rrl.LimitKeyGenerator;
-import com.github.hetianyi.plugin.rrl.FallbackHandler;
-import com.github.hetianyi.plugin.rrl.config.LimitResourceProperties;
-import com.github.hetianyi.plugin.rrl.impl.EmptyBlockHandler;
-import com.github.hetianyi.plugin.rrl.impl.EmptyFallbackHandler;
-import com.github.hetianyi.plugin.rrl.impl.EmptyLimitKeyGenerator;
+import com.github.hetianyi.plugin.sentinel.BlockHandler;
+import com.github.hetianyi.plugin.sentinel.LimitKeyGenerator;
+import com.github.hetianyi.plugin.sentinel.FallbackHandler;
+import com.github.hetianyi.plugin.sentinel.config.LimitResourceProperties;
+import com.github.hetianyi.plugin.sentinel.impl.EmptyBlockHandler;
+import com.github.hetianyi.plugin.sentinel.impl.EmptyFallbackHandler;
+import com.github.hetianyi.plugin.sentinel.impl.EmptyLimitKeyGenerator;
 
 import java.lang.annotation.*;
 

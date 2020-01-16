@@ -1,7 +1,7 @@
-package com.github.hetianyi.plugin.rrl.impl;
+package com.github.hetianyi.plugin.sentinel.impl;
 
 import com.github.hetianyi.common.util.HeaderUtil;
-import com.github.hetianyi.plugin.rrl.LimitKeyGenerator;
+import com.github.hetianyi.plugin.sentinel.LimitKeyGenerator;
 
 import javax.servlet.http.HttpServletRequest;
 

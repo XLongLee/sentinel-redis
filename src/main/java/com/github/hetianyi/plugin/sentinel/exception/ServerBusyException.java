@@ -1,4 +1,4 @@
-package com.github.hetianyi.plugin.rrl.exception;
+package com.github.hetianyi.plugin.sentinel.exception;
 
 /**
  * 服务器繁忙异常

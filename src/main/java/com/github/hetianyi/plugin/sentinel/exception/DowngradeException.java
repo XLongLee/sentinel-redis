@@ -1,4 +1,4 @@
-package com.github.hetianyi.plugin.rrl.exception;
+package com.github.hetianyi.plugin.sentinel.exception;
 
 /**
  * 降级异常

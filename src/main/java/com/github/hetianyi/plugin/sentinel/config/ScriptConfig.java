@@ -1,4 +1,4 @@
-package com.github.hetianyi.plugin.rrl.config;
+package com.github.hetianyi.plugin.sentinel.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

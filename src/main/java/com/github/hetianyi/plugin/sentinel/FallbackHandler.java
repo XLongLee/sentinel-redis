@@ -1,4 +1,4 @@
-package com.github.hetianyi.plugin.rrl;
+package com.github.hetianyi.plugin.sentinel;
 
 /**
  * 异常接口的fallback处理方法
