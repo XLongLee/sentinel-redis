@@ -108,7 +108,7 @@ public class AspectResolver {
                         properties.getLimitKeyGenerator(), LimitKeyGenerator.class, UrlLimitKeyGenerator.class);
         limitKeyGenerators.put(limitKeyGenerator.getClass(), limitKeyGenerator);
         defaultLimitKeyGeneratorClass = limitKeyGenerator.getClass();
-        log.info("defaultLimitKeyGeneratorClass = {}", defaultLimitKeyGeneratorClass.getName());
+        log.debug("defaultLimitKeyGeneratorClass = {}", defaultLimitKeyGeneratorClass.getName());
 
         // 从配置初始化默认的block handler
         BlockHandler blockHandler =
@@ -116,7 +116,7 @@ public class AspectResolver {
                         properties.getBlockHandler(), BlockHandler.class, DefaultBlockHandler.class);
         blockHandlers.put(blockHandler.getClass(), blockHandler);
         defaultBlockHandlerClass = blockHandler.getClass();
-        log.info("defaultBlockHandlerClass = {}", defaultBlockHandlerClass.getName());
+        log.debug("defaultBlockHandlerClass = {}", defaultBlockHandlerClass.getName());
 
         // 从配置初始化默认的fallback handler
         FallbackHandler fallbackHandler =
@@ -124,7 +124,7 @@ public class AspectResolver {
                         properties.getFallbackHandler(), FallbackHandler.class, DefaultFallbackHandler.class);
         fallbackHandlers.put(fallbackHandler.getClass(), fallbackHandler);
         defaultFallbackHandlerClass = fallbackHandler.getClass();
-        log.info("defaultFallbackHandlerClass = {}", defaultFallbackHandlerClass.getName());
+        log.debug("defaultFallbackHandlerClass = {}", defaultFallbackHandlerClass.getName());
 
         /*if (!StringUtil.isNullOrEmptyTrimed(generatorClassName)) {
             synchronized (LimitKeyGenerator.class) {
@@ -205,7 +205,7 @@ public class AspectResolver {
 
         String limitKey = StringUtil.join("{", searchLimitKeyGenerator(limitResource.limitKeyGenerator()).getKey(
                 req, StringUtil.join(req.getMethod(), "_", apiPath)), "}");
-        log.info("limit key: {}", limitKey);
+        log.debug("limit key: {}", limitKey);
 
         AnnotatedLimitResourceProperties props = exchangeProperties(limitKey, limitResource);
 
@@ -366,6 +366,9 @@ public class AspectResolver {
                 cachedApiLimitProperties.put(limitKey, props);
             }
         }
+
+        log.debug("AnnotatedLimitResourceProperties: {}\n\t{}", limitKey, props.toString());
+
         return props;
     }
 }
