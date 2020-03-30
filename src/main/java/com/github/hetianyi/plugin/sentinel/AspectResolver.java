@@ -146,6 +146,8 @@ public class AspectResolver {
                 properties.getDegradeWindow(),
                 properties.isEnableDegrade()
         );
+
+        log.info("Sentinel Redis starts with {} mode.", properties.isGateway() ? "gateway" : "plain");
     }
 
     /**

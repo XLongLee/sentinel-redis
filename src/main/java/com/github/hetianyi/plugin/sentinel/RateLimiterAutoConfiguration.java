@@ -8,8 +8,15 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletContextInitializer;
+import org.springframework.boot.web.servlet.ServletContextInitializerBeans;
+import org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext;
+import org.springframework.boot.web.servlet.support.ServletContextApplicationContextInitializer;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
+import org.springframework.web.context.support.ServletContextAwareProcessor;
 
 /**
  *
@@ -30,5 +37,15 @@ public class RateLimiterAutoConfiguration {
     @Around("@annotation(limitResource)")
     public Object input(ProceedingJoinPoint joinPoint, LimitResource limitResource) throws Throwable {
         return aspectResolver.resolve(joinPoint, limitResource);
+    }
+
+
+    @Bean
+    public FilterRegistrationBean someFilterRegistration() {
+        FilterRegistrationBean registration = new FilterRegistrationBean();
+        registration.setFilter(new GatewayResolveFilter());
+        registration.addUrlPatterns("/*");
+        registration.setOrder(1);
+        return registration;
     }
 }

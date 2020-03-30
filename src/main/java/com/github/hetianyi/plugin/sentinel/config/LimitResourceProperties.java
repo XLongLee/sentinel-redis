@@ -59,9 +59,13 @@ public class LimitResourceProperties {
     private int degradeWindow = 5;
 
     /**
-     * 告知是否为集群模式
+     * 告知是否为集群网关。<br/>
+     * 如果是集群网关，则限流和降级将会针对全局请求数量和全局异常数量进行统计，<br/>
+     * 不对具体某个资源限制，此时limitKeyGenerator参数无效，<br/>
+     * count含义相应变为全局请求数量限制额；<br/>
+     * degradeValue含义相应变为全局异常限制额。
      */
-    private boolean clusterMode = false;
+    private boolean isGateway = false;
 
     /**
      * 是否开启降级功能
@@ -83,6 +87,11 @@ public class LimitResourceProperties {
      */
     private String fallbackHandler;
 
+    /**
+     * 检查降级策略值是否合法
+     * @param degradeStrategy
+     * @return
+     */
     public static boolean isValidDegradeStrategy(String degradeStrategy) {
         return DEGRADE_EP.equals(degradeStrategy) || DEGRADE_EC.equals(degradeStrategy)
                 || DEGRADE_RT.equals(degradeStrategy);
